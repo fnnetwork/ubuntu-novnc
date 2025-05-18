@@ -39,7 +39,7 @@ RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic mai
 RUN apt-get update
 RUN apt-get install -y --install-recommends winehq-stable
 
-USER user
+USER root
 WORKDIR /home/user
 
 CMD ["sh","/start.sh"]
